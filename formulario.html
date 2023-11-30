@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario River Plate</title>
+    <style>
+     body{
+        background-image: url(asset/img/riverrrrrr.jpg);
+     }
+    h2,label{
+          color: rgb(255, 255, 255);
+    }
+    label{
+            font-size: 1.4em;
+    }
+    .color{
+            background-color: rgb(0, 0, 0);
+            height: 30px;
+            border: 1px solid wheat;
+            color: rgb(255, 255, 255);
+            font-size: 1em;
+            width: 500px;
+    }
+    main{
+        margin: 0 auto;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+    }
+    input{
+         color: black;
+    }
+    .letra{
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .enzosocio{
+        display: flex;
+        justify-content:r;
+        height: 300px;
+        margin: 100px;
+    }
+    .parrafo{
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+    }
+    footer{
+        display: flex;
+        justify-content: end;
+        color: white;
+        font-size: 1.3em;
+    }
+    .documento{
+        background-color:black;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+   <header>
+      <img src="asset/img/Screenshot_20231122_164254.png" alt="River ID">
+      <img class="Escudo" src="asset/img/Escudo_negro_River_Plate.png" alt="Escudo de River">
+      
+    </header>
+   <h2 class="letra">Regristrate en River Socios</h2>
+   <p class="parrafo">Mas que un equipo,Una familia Club Atletico River Plate</p>
+   <main>
+    <div><form action="/destino" method="post">
+        <div class="datos">
+            <label for="Documento"> Documento:</label>
+            <input class="documento" type="text" name="Documento" id="Documento">
+        </div>
+         <div class="datos">
+            <h2> Nacionalidad</h2>
+           <select class="color" name="Nacionalidad" id="Nacionalidad">
+            <option value="">Nacionalidad</option>
+            <option value="Arg" selected>Argentina</option>
+            <option value="Br" selected>Brasil</option>
+            <option value="Ur" selected>Uruguay</option>
+            <option value="Ch" selected>Chile</option>
+        </select>
+        </div>
+        <div class="datos">
+             <h2>Sexo</h2>
+            <select class="color" name="Sexo" id="Sexo">
+            <option value="">Sexo</option>
+            <option value="Masculino" selected>Masculino</option>
+            <option value="Femenino" selected>Femenino</option>
+            <option value="No binario" selected>No binario</option>
+            </select>
+        </div>
+        <div class="datos">
+            <h2>Tipo de Documento</h2>
+           <select class="color" name="Tipo de documento" id="Tipo de documento">
+           <option value="">Tipo de Documento</option>
+           <option value="Dni arg" selected>Tengo Dni Argentino</option>
+           <option value="Doc Extranjero" selected>Tengo un documento Extranjero</option>
+           </select>
+       </div>
+       <div class="datos">
+        <input type="checkbox" name="terminos" id="terminos">
+        <label for="He leido y acepto los términos y condiciones de usuario">He leido y acepto los términos y condiciones de usuario</label>
+       </div>
+        <div class="datos">
+        <input class="documento" type="submit" value="Continuar">
+       </div>
+       
+    </form></div>
+    <div>
+        <img class="enzosocio" src="asset/img/enzosocio.jpg" alt="enzosocio">
+    </div>
+</main>
+<footer>
+    <h3>Joel Maldonado 4<sup>to</sup> 3<sup>ra</sup></h3>
+</footer>
+</body>
+</html>
